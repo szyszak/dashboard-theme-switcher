@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://szyszak.github.io/dashboard-theme-switcher/",
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "gh-pages": "^3.1.0",
     "sass": "^1.26.9"
   }
 }

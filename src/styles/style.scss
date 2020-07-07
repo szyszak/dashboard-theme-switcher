@@ -102,6 +102,10 @@ body {
     background: var(--toggle-bg);
     border-radius: 30px;
     cursor: pointer;
+
+    &:focus-within {
+      outline: dashed 1px var(--text-primary);
+    }
   }
 
   &__dot {
