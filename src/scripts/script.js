@@ -36,34 +36,12 @@ const setTheme = (newTheme) => {
     toggle.checked = false;
   }
 
+  const currentTheme = newTheme === 'light' ? light : dark;
+
   // change CSS variables according to theme
-  root.style.setProperty('--background', newTheme === 'dark' ? dark.background : light.background);
-
-  root.style.setProperty(
-    '--background-top',
-    newTheme === 'dark' ? dark.backgroundTop : light.backgroundTop,
-  );
-
-  root.style.setProperty('--card-bg', newTheme === 'dark' ? dark.cardBg : light.cardBg);
-
-  root.style.setProperty(
-    '--text-secondary',
-    newTheme === 'dark' ? dark.textSecondary : light.textSecondary,
-  );
-
-  root.style.setProperty(
-    '--text-primary',
-    newTheme === 'dark' ? dark.textPrimary : light.textPrimary,
-  );
-
-  root.style.setProperty(
-    '--card-bg-hover',
-    newTheme === 'dark' ? dark.cardBgHover : light.cardBgHover,
-  );
-
-  root.style.setProperty('--toggle-bg', newTheme === 'dark' ? dark.toggleBg : light.toggleBg);
-
-  root.style.setProperty('--toggle-dot', newTheme === 'dark' ? dark.toggleDot : light.toggleDot);
+  for (const [key, value] of Object.entries(currentTheme)) {
+    root.style.setProperty(key, value);
+  }
 };
 
 setTheme(getInitialTheme());
