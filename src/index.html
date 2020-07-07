@@ -3,10 +3,203 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHANGE ME</title>
+    <title>Dashboard Theme Switcher</title>
     <link rel="stylesheet" href="./styles/style.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="top-bg"></div>
+
+    <main class="dashboard">
+      <header class="top">
+        <h1 class="top__header">Social Media Dashboard</h1>
+        <p class="top__followers">Total Followers: 23,004</p>
+
+        <div class="theme-toggle">
+          <p class="theme-toggle__label" id="toggle-label">Dark Mode</p>
+
+          <label class="theme-toggle__wrapper" for="toggle" aria-labelledby="toggle-label">
+            <input
+              type="checkbox"
+              name="toggle"
+              id="toggle"
+              class="theme-toggle__checkbox visually-hidden"
+            />
+            <div class="theme-toggle__dot"></div>
+          </label>
+        </div>
+      </header>
+
+      <section class="cards">
+        <div class="card card--facebook">
+          <img src="./images/icon-facebook.svg" alt="" class="card__icon" />
+          <span class="card__username">@nathanf</span>
+
+          <span class="card__amount">1987</span>
+          <span class="card__subs">followers</span>
+
+          <img src="./images/icon-up.svg" alt="" class="card__arrow" />
+          <span class="card__difference card__difference--up">12 today</span>
+        </div>
+
+        <div class="card card--twitter">
+          <img src="./images/icon-twitter.svg" alt="" class="card__icon" />
+          <span class="card__username">@nathanf</span>
+
+          <span class="card__amount">1044</span>
+          <span class="card__subs">followers</span>
+
+          <img src="./images/icon-up.svg" alt="" class="card__arrow" />
+          <span class="card__difference card__difference--up">99 today</span>
+        </div>
+
+        <div class="card card--instagram">
+          <img src="./images/icon-instagram.svg" alt="" class="card__icon" />
+          <span class="card__username">@realnathanf</span>
+
+          <span class="card__amount">11k</span>
+          <span class="card__subs">followers</span>
+
+          <img src="./images/icon-up.svg" alt="" class="card__arrow" />
+          <span class="card__difference card__difference--up">1099 today</span>
+        </div>
+
+        <div class="card card--youtube">
+          <img src="./images/icon-youtube.svg" alt="" class="card__icon" />
+          <span class="card__username">Nathan F.</span>
+
+          <span class="card__amount">8239</span>
+          <span class="card__subs">subscribers</span>
+
+          <img src="./images/icon-down.svg" alt="" class="card__arrow" />
+          <span class="card__difference card__difference--down">144 today</span>
+        </div>
+      </section>
+
+      <section class="overview">
+        <h2 class="overview__header">
+          Overview - Today
+        </h2>
+
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__title">page views</span>
+
+            <img src="./images/icon-facebook.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">87</span>
+
+            <div class="difference">
+              <img src="./images/icon-up.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--up">3%</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span class="stat__title">likes</span>
+
+            <img src="./images/icon-facebook.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">52</span>
+
+            <div class="difference">
+              <img src="./images/icon-down.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--down">3%</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span class="stat__title">likes</span>
+
+            <img src="./images/icon-instagram.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">5462</span>
+
+            <div class="difference">
+              <img src="./images/icon-up.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--up">2257%</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span class="stat__title">profile views</span>
+
+            <img src="./images/icon-instagram.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">52k</span>
+
+            <div class="difference">
+              <img src="./images/icon-up.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--up">1375%</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span class="stat__title">retweets</span>
+
+            <img src="./images/icon-twitter.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">117</span>
+
+            <div class="difference">
+              <img src="./images/icon-up.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--up">303%</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span class="stat__title">likes</span>
+
+            <img src="./images/icon-twitter.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">507</span>
+
+            <div class="difference">
+              <img src="./images/icon-up.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--up">355%</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span class="stat__title">likes</span>
+
+            <img src="./images/icon-youtube.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">107</span>
+
+            <div class="difference">
+              <img src="./images/icon-down.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--down">19%</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <span class="stat__title">total views</span>
+
+            <img src="./images/icon-youtube.svg" alt="" class="stat__icon" />
+
+            <span class="stat__amount">1407</span>
+
+            <div class="difference">
+              <img src="./images/icon-down.svg" alt="" class="difference__arrow" />
+
+              <span class="difference__number difference__number--down">12%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
